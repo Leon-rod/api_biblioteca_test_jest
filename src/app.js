@@ -1,6 +1,6 @@
-require("dotenv").config();
+require("dotenv").config({path:'./.env'});
 const express = require("express");
-
+console.log(process.env.MONGO_DB)
 const { auth } = require("express-oauth2-jwt-bearer");
 const errorHandler = require("./middlewares/errorHandler");
 
